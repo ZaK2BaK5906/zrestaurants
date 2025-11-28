@@ -1106,7 +1106,7 @@ PreparedRecipes = {
     },
 
     -- Pop's Diner
-    popsdiner = {
+    pops = {
         ['diner_breakfast'] = {
             label = 'Petit-Déjeuner Classique',
             image = 'breakfast.png',
@@ -1196,8 +1196,8 @@ PreparedRecipes = {
         }
     },
 
-    -- Bean Machine Coffee
-    beanmachine = {
+    -- Beans Coffee
+    beans = {
         ['bean_espresso'] = {
             label = 'Espresso',
             image = 'espresso.png',

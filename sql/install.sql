@@ -133,51 +133,24 @@ ON DUPLICATE KEY UPDATE `label`=VALUES(`label`), `price`=VALUES(`price`);
 
 -- Insert menu items for Pop's Diner
 INSERT INTO `zrestaurants_menu` (`restaurant`, `item`, `label`, `image`, `price`, `stock`, `enabled`, `category`) VALUES
-('popsdiner', 'diner_breakfast', 'Classic Breakfast', 'breakfast.png', 22, 0, 1, 'food'),
-('popsdiner', 'diner_pancakes', 'Pancakes Stack', 'pancakes.png', 16, 0, 1, 'food'),
-('popsdiner', 'diner_club_sandwich', 'Club Sandwich', 'club_sandwich.png', 18, 0, 1, 'food'),
-('popsdiner', 'diner_apple_pie', 'Apple Pie Slice', 'apple_pie.png', 12, 0, 1, 'food'),
-('popsdiner', 'diner_hotdog', 'Hot Dog', 'hotdog.png', 10, 0, 1, 'food')
+('pops', 'diner_breakfast', 'Classic Breakfast', 'breakfast.png', 22, 0, 1, 'food'),
+('pops', 'diner_pancakes', 'Pancakes Stack', 'pancakes.png', 16, 0, 1, 'food'),
+('pops', 'diner_club_sandwich', 'Club Sandwich', 'club_sandwich.png', 18, 0, 1, 'food'),
+('pops', 'diner_apple_pie', 'Apple Pie Slice', 'apple_pie.png', 12, 0, 1, 'food'),
+('pops', 'diner_hotdog', 'Hot Dog', 'hotdog.png', 10, 0, 1, 'food')
 ON DUPLICATE KEY UPDATE `label`=VALUES(`label`), `price`=VALUES(`price`);
 
--- Insert menu items for Bean Machine Coffee
+-- Insert menu items for Beans Coffee
 INSERT INTO `zrestaurants_menu` (`restaurant`, `item`, `label`, `image`, `price`, `stock`, `enabled`, `category`) VALUES
-('beanmachine', 'bean_espresso', 'Espresso', 'espresso.png', 5, 0, 1, 'drink'),
-('beanmachine', 'bean_cappuccino', 'Cappuccino', 'cappuccino.png', 8, 0, 1, 'drink'),
-('beanmachine', 'bean_latte', 'Caffe Latte', 'latte.png', 9, 0, 1, 'drink'),
-('beanmachine', 'bean_mocha', 'Mocha', 'mocha.png', 10, 0, 1, 'drink'),
-('beanmachine', 'bean_iced_coffee', 'Iced Coffee', 'iced_coffee.png', 7, 0, 1, 'drink')
+('beans', 'bean_espresso', 'Espresso', 'espresso.png', 5, 0, 1, 'drink'),
+('beans', 'bean_cappuccino', 'Cappuccino', 'cappuccino.png', 8, 0, 1, 'drink'),
+('beans', 'bean_latte', 'Caffe Latte', 'latte.png', 9, 0, 1, 'drink'),
+('beans', 'bean_mocha', 'Mocha', 'mocha.png', 10, 0, 1, 'drink'),
+('beans', 'bean_iced_coffee', 'Iced Coffee', 'iced_coffee.png', 7, 0, 1, 'drink')
 ON DUPLICATE KEY UPDATE `label`=VALUES(`label`), `price`=VALUES(`price`);
 
 -- =====================================
--- JOBS & SOCIETIES SETUP INSTRUCTIONS
+-- JOBS & SOCIETIES SETUP
 -- =====================================
--- Add these jobs to your database:
---
--- INSERT INTO `jobs` (`name`, `label`) VALUES
--- ('burgershot', 'Burger Shot'),
--- ('pizzathis', 'Pizza This'),
--- ('unicorn', 'Vanilla Unicorn'),
--- ('upnatom', 'Up\'N Atom'),
--- ('popsdiner', 'Pop\'s Diner'),
--- ('beanmachine', 'Bean Machine');
---
--- Add these societies to your database:
---
--- INSERT INTO `addon_account` (`name`, `label`, `shared`) VALUES
--- ('society_burgershot', 'Burger Shot', 1),
--- ('society_pizzathis', 'Pizza This', 1),
--- ('society_unicorn', 'Vanilla Unicorn', 1),
--- ('society_upnatom', 'Up\'N Atom', 1),
--- ('society_popsdiner', 'Pop\'s Diner', 1),
--- ('society_beanmachine', 'Bean Machine', 1);
---
--- Add job grades (example for all restaurants):
---
--- INSERT INTO `job_grades` (`job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
--- ('burgershot', 0, 'recruit', 'Recruit', 300, '{}', '{}'),
--- ('burgershot', 1, 'employee', 'Employee', 400, '{}', '{}'),
--- ('burgershot', 2, 'manager', 'Manager', 600, '{}', '{}'),
--- ('burgershot', 3, 'boss', 'Boss', 800, '{}', '{}');
---
--- Repeat the above for: pizzathis, unicorn, upnatom, popsdiner, beanmachine
+-- IMPORTANT: Execute sql/jobs_societies.sql to create all jobs, grades and societies!
+-- That file contains complete setup for all 6 restaurants with 6 grades each.

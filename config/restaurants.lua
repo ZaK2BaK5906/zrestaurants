@@ -312,7 +312,7 @@ Restaurants['pizzathis'] = {
 }
 
 Restaurants['unicorn'] = {
-    label = 'Vanilla Unicorn',
+    label = 'Unicorn Night Club',
     job = 'unicorn',
     blip = {
         enabled = true,
@@ -424,7 +424,7 @@ Restaurants['unicorn'] = {
 }
 
 Restaurants['upnatom'] = {
-    label = 'Up\'N Atom',
+    label = 'Up\'N Atom Burger',
     job = 'upnatom',
     blip = {
         enabled = true,
@@ -564,9 +564,9 @@ Restaurants['upnatom'] = {
     }
 }
 
-Restaurants['popsdiner'] = {
+Restaurants['pops'] = {
     label = 'Pop\'s Diner',
-    job = 'popsdiner',
+    job = 'pops',
     blip = {
         enabled = true,
         coords = vector3(1588.23, 6452.74, 25.32),
@@ -599,7 +599,7 @@ Restaurants['popsdiner'] = {
 
     stashes = {
         {
-            name = 'popsdiner_storage',
+            name = 'pops_storage',
             label = 'Diner Storage',
             coords = vector3(1587.77, 6457.30, 25.32),
             heading = 245.0,
@@ -611,7 +611,7 @@ Restaurants['popsdiner'] = {
 
     trays = {
         {
-            name = 'popsdiner_counter',
+            name = 'pops_counter',
             label = 'Counter',
             coords = vector3(1588.32, 6453.44, 26.0),
             heading = 25.0,
@@ -670,7 +670,7 @@ Restaurants['popsdiner'] = {
             coords = vector3(1588.0, 6453.0, 25.32),
             range = 15.0,
             volume = 0.3,
-            allowedJobs = {'popsdiner'}
+            allowedJobs = {'pops'}
         }
     },
 
@@ -697,9 +697,9 @@ Restaurants['popsdiner'] = {
     }
 }
 
-Restaurants['beanmachine'] = {
-    label = 'Bean Machine Coffee',
-    job = 'beanmachine',
+Restaurants['beans'] = {
+    label = 'Beans Coffee',
+    job = 'beans',
     blip = {
         enabled = true,
         coords = vector3(-628.08, 237.68, 81.88),
@@ -732,8 +732,8 @@ Restaurants['beanmachine'] = {
 
     stashes = {
         {
-            name = 'beanmachine_storage',
-            label = 'Bean Machine Storage',
+            name = 'beans_storage',
+            label = 'Beans Coffee Storage',
             coords = vector3(-631.77, 233.30, 81.88),
             heading = 280.0,
             slots = 40,
@@ -744,7 +744,7 @@ Restaurants['beanmachine'] = {
 
     trays = {
         {
-            name = 'beanmachine_counter',
+            name = 'beans_counter',
             label = 'Counter',
             coords = vector3(-628.32, 236.44, 82.0),
             heading = 100.0,
@@ -791,7 +791,7 @@ Restaurants['beanmachine'] = {
             coords = vector3(-628.0, 237.0, 81.88),
             range = 15.0,
             volume = 0.3,
-            allowedJobs = {'beanmachine'}
+            allowedJobs = {'beans'}
         }
     },
 
