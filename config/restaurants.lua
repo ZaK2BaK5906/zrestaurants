@@ -311,8 +311,510 @@ Restaurants['pizzathis'] = {
     }
 }
 
--- You can add more restaurants following the same structure
--- Restaurants['tacoshop'] = { ... }
--- Restaurants['catcafe'] = { ... }
+Restaurants['unicorn'] = {
+    label = 'Vanilla Unicorn',
+    job = 'unicorn',
+    blip = {
+        enabled = true,
+        coords = vector3(127.83, -1284.67, 29.27),
+        sprite = 121,
+        color = 48,
+        scale = 0.8
+    },
+
+    features = {
+        management = true,
+        stash = true,
+        trays = true,
+        crafting = true,
+        register = true,
+        delivery = false,
+        offlineShop = true,
+        garage = false,
+        driveThru = false,
+        music = true,
+        chairs = true,
+        peds = true,
+        props = false
+    },
+
+    management = {
+        coords = vector3(95.20, -1292.80, 29.27),
+        heading = 210.0,
+        distance = 2.0
+    },
+
+    stashes = {
+        {
+            name = 'unicorn_storage',
+            label = 'Unicorn Storage',
+            coords = vector3(93.77, -1291.30, 29.27),
+            heading = 210.0,
+            slots = 50,
+            weight = 100000,
+            distance = 2.0
+        }
+    },
+
+    trays = {
+        {
+            name = 'unicorn_bar',
+            label = 'Bar Counter',
+            coords = vector3(129.32, -1284.44, 29.27),
+            heading = 210.0,
+            slots = 10,
+            weight = 10000,
+            distance = 2.0
+        }
+    },
+
+    stations = {
+        {
+            type = 'drink',
+            coords = vector3(128.80, -1283.33, 29.27),
+            heading = 210.0,
+            distance = 2.0
+        },
+        {
+            type = 'prepare',
+            coords = vector3(130.65, -1286.33, 29.27),
+            heading = 210.0,
+            distance = 2.0
+        }
+    },
+
+    registers = {
+        {
+            coords = vector3(129.32, -1285.44, 29.27),
+            heading = 210.0,
+            distance = 2.0
+        }
+    },
+
+    music = {
+        {
+            coords = vector3(120.0, -1280.0, 29.27),
+            range = 25.0,
+            volume = 0.4,
+            allowedJobs = {'unicorn'}
+        }
+    },
+
+    chairs = {
+        {coords = vector3(118.22, -1278.22, 29.27), heading = 120.0},
+        {coords = vector3(120.22, -1279.22, 29.27), heading = 120.0},
+        {coords = vector3(122.22, -1280.22, 29.27), heading = 120.0}
+    },
+
+    peds = {
+        {
+            model = 's_f_y_bartender_01',
+            coords = vector4(129.32, -1284.44, 29.27, 210.0),
+            scenario = 'WORLD_HUMAN_STAND_MOBILE'
+        }
+    },
+
+    props = {},
+
+    shopZone = {
+        coords = vector3(129.0, -1284.0, 29.27),
+        size = vector3(8.0, 8.0, 3.0),
+        rotation = 210.0
+    }
+}
+
+Restaurants['upnatom'] = {
+    label = 'Up\'N Atom',
+    job = 'upnatom',
+    blip = {
+        enabled = true,
+        coords = vector3(-1166.98, -884.09, 14.0),
+        sprite = 106,
+        color = 2,
+        scale = 0.8
+    },
+
+    features = {
+        management = true,
+        stash = true,
+        trays = true,
+        crafting = true,
+        register = true,
+        delivery = true,
+        offlineShop = true,
+        garage = true,
+        driveThru = false,
+        music = true,
+        chairs = true,
+        peds = true,
+        props = true
+    },
+
+    management = {
+        coords = vector3(-1171.89, -886.87, 14.0),
+        heading = 123.0,
+        distance = 2.0
+    },
+
+    stashes = {
+        {
+            name = 'upnatom_storage',
+            label = 'Up\'N Atom Storage',
+            coords = vector3(-1173.77, -889.30, 14.0),
+            heading = 35.0,
+            slots = 50,
+            weight = 100000,
+            distance = 2.0
+        },
+        {
+            name = 'upnatom_fridge',
+            label = 'Up\'N Atom Fridge',
+            coords = vector3(-1170.44, -890.16, 14.0),
+            heading = 35.0,
+            slots = 30,
+            weight = 50000,
+            distance = 2.0
+        }
+    },
+
+    trays = {
+        {
+            name = 'upnatom_tray1',
+            label = 'Counter Tray',
+            coords = vector3(-1165.32, -883.44, 14.5),
+            heading = 35.0,
+            slots = 10,
+            weight = 10000,
+            distance = 2.0
+        }
+    },
+
+    stations = {
+        {
+            type = 'grill',
+            coords = vector3(-1171.80, -892.33, 14.0),
+            heading = 303.0,
+            distance = 2.0
+        },
+        {
+            type = 'fryer',
+            coords = vector3(-1172.63, -891.39, 14.0),
+            heading = 303.0,
+            distance = 2.0
+        },
+        {
+            type = 'prepare',
+            coords = vector3(-1168.66, -889.84, 14.0),
+            heading = 213.0,
+            distance = 2.0
+        },
+        {
+            type = 'drink',
+            coords = vector3(-1169.65, -888.33, 14.0),
+            heading = 213.0,
+            distance = 2.0
+        }
+    },
+
+    registers = {
+        {
+            coords = vector3(-1165.32, -884.44, 14.5),
+            heading = 213.0,
+            distance = 2.0
+        }
+    },
+
+    garage = {
+        spawn = vector4(-1155.88, -888.97, 13.80, 303.0),
+        delete = vector3(-1155.88, -888.97, 13.80),
+        distance = 3.0,
+        vehicles = {
+            {model = 'burrito3', label = 'Delivery Van', price = 0}
+        }
+    },
+
+    music = {
+        {
+            coords = vector3(-1167.0, -886.0, 14.0),
+            range = 20.0,
+            volume = 0.3,
+            allowedJobs = {'upnatom'}
+        }
+    },
+
+    chairs = {
+        {coords = vector3(-1163.22, -882.22, 14.0), heading = 213.0},
+        {coords = vector3(-1161.78, -883.75, 14.0), heading = 213.0}
+    },
+
+    peds = {
+        {
+            model = 's_f_y_sweatshop_01',
+            coords = vector4(-1165.32, -884.44, 14.0, 213.0),
+            scenario = 'WORLD_HUMAN_STAND_MOBILE'
+        }
+    },
+
+    props = {},
+
+    shopZone = {
+        coords = vector3(-1166.0, -885.0, 14.0),
+        size = vector3(10.0, 10.0, 3.0),
+        rotation = 35.0
+    }
+}
+
+Restaurants['popsdiner'] = {
+    label = 'Pop\'s Diner',
+    job = 'popsdiner',
+    blip = {
+        enabled = true,
+        coords = vector3(1588.23, 6452.74, 25.32),
+        sprite = 267,
+        color = 5,
+        scale = 0.8
+    },
+
+    features = {
+        management = true,
+        stash = true,
+        trays = true,
+        crafting = true,
+        register = true,
+        delivery = true,
+        offlineShop = true,
+        garage = true,
+        driveThru = false,
+        music = true,
+        chairs = true,
+        peds = true,
+        props = false
+    },
+
+    management = {
+        coords = vector3(1590.27, 6455.52, 25.32),
+        heading = 25.0,
+        distance = 2.0
+    },
+
+    stashes = {
+        {
+            name = 'popsdiner_storage',
+            label = 'Diner Storage',
+            coords = vector3(1587.77, 6457.30, 25.32),
+            heading = 245.0,
+            slots = 50,
+            weight = 100000,
+            distance = 2.0
+        }
+    },
+
+    trays = {
+        {
+            name = 'popsdiner_counter',
+            label = 'Counter',
+            coords = vector3(1588.32, 6453.44, 26.0),
+            heading = 25.0,
+            slots = 10,
+            weight = 10000,
+            distance = 2.0
+        }
+    },
+
+    stations = {
+        {
+            type = 'grill',
+            coords = vector3(1589.80, 6456.33, 25.32),
+            heading = 245.0,
+            distance = 2.0
+        },
+        {
+            type = 'prepare',
+            coords = vector3(1588.63, 6458.39, 25.32),
+            heading = 245.0,
+            distance = 2.0
+        },
+        {
+            type = 'drink',
+            coords = vector3(1586.65, 6454.33, 25.32),
+            heading = 65.0,
+            distance = 2.0
+        },
+        {
+            type = 'cook',
+            coords = vector3(1591.20, 6457.80, 25.32),
+            heading = 245.0,
+            distance = 2.0
+        }
+    },
+
+    registers = {
+        {
+            coords = vector3(1587.32, 6453.44, 26.0),
+            heading = 65.0,
+            distance = 2.0
+        }
+    },
+
+    garage = {
+        spawn = vector4(1580.88, 6450.97, 25.00, 65.0),
+        delete = vector3(1580.88, 6450.97, 25.00),
+        distance = 3.0,
+        vehicles = {
+            {model = 'pony', label = 'Delivery Van', price = 0}
+        }
+    },
+
+    music = {
+        {
+            coords = vector3(1588.0, 6453.0, 25.32),
+            range = 15.0,
+            volume = 0.3,
+            allowedJobs = {'popsdiner'}
+        }
+    },
+
+    chairs = {
+        {coords = vector3(1585.22, 6450.22, 25.32), heading = 65.0},
+        {coords = vector3(1584.22, 6452.22, 25.32), heading = 65.0},
+        {coords = vector3(1583.22, 6454.22, 25.32), heading = 65.0}
+    },
+
+    peds = {
+        {
+            model = 's_f_y_waitress_01',
+            coords = vector4(1587.32, 6453.44, 25.32, 65.0),
+            scenario = 'WORLD_HUMAN_STAND_MOBILE'
+        }
+    },
+
+    props = {},
+
+    shopZone = {
+        coords = vector3(1588.0, 6453.0, 25.32),
+        size = vector3(8.0, 8.0, 3.0),
+        rotation = 25.0
+    }
+}
+
+Restaurants['beanmachine'] = {
+    label = 'Bean Machine Coffee',
+    job = 'beanmachine',
+    blip = {
+        enabled = true,
+        coords = vector3(-628.08, 237.68, 81.88),
+        sprite = 52,
+        color = 36,
+        scale = 0.8
+    },
+
+    features = {
+        management = true,
+        stash = true,
+        trays = true,
+        crafting = true,
+        register = true,
+        delivery = true,
+        offlineShop = true,
+        garage = true,
+        driveThru = false,
+        music = true,
+        chairs = true,
+        peds = true,
+        props = false
+    },
+
+    management = {
+        coords = vector3(-630.20, 234.80, 81.88),
+        heading = 280.0,
+        distance = 2.0
+    },
+
+    stashes = {
+        {
+            name = 'beanmachine_storage',
+            label = 'Bean Machine Storage',
+            coords = vector3(-631.77, 233.30, 81.88),
+            heading = 280.0,
+            slots = 40,
+            weight = 80000,
+            distance = 2.0
+        }
+    },
+
+    trays = {
+        {
+            name = 'beanmachine_counter',
+            label = 'Counter',
+            coords = vector3(-628.32, 236.44, 82.0),
+            heading = 100.0,
+            slots = 10,
+            weight = 10000,
+            distance = 2.0
+        }
+    },
+
+    stations = {
+        {
+            type = 'drink',
+            coords = vector3(-630.80, 234.33, 81.88),
+            heading = 280.0,
+            distance = 2.0
+        },
+        {
+            type = 'prepare',
+            coords = vector3(-631.65, 235.33, 81.88),
+            heading = 280.0,
+            distance = 2.0
+        }
+    },
+
+    registers = {
+        {
+            coords = vector3(-627.32, 236.44, 82.0),
+            heading = 100.0,
+            distance = 2.0
+        }
+    },
+
+    garage = {
+        spawn = vector4(-620.88, 230.97, 81.50, 100.0),
+        delete = vector3(-620.88, 230.97, 81.50),
+        distance = 3.0,
+        vehicles = {
+            {model = 'faggio', label = 'Coffee Scooter', price = 0}
+        }
+    },
+
+    music = {
+        {
+            coords = vector3(-628.0, 237.0, 81.88),
+            range = 15.0,
+            volume = 0.3,
+            allowedJobs = {'beanmachine'}
+        }
+    },
+
+    chairs = {
+        {coords = vector3(-626.22, 238.22, 81.88), heading = 100.0},
+        {coords = vector3(-625.22, 240.22, 81.88), heading = 100.0}
+    },
+
+    peds = {
+        {
+            model = 's_f_y_shop_low',
+            coords = vector4(-627.32, 236.44, 81.88, 100.0),
+            scenario = 'WORLD_HUMAN_STAND_MOBILE'
+        }
+    },
+
+    props = {},
+
+    shopZone = {
+        coords = vector3(-628.0, 237.0, 81.88),
+        size = vector3(8.0, 8.0, 3.0),
+        rotation = 10.0
+    }
+}
 
 return Restaurants
