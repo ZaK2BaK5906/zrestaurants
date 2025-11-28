@@ -104,7 +104,7 @@ RegisterNetEvent('zrestaurants:client:createRecipe', function(restaurant)
         {type = 'input', label = _L('recipe_name'), required = true},
         {type = 'input', label = 'Label', required = true},
         {type = 'number', label = _L('recipe_price'), required = true, min = 1, max = Config.MaxPricePerRecipe},
-        {type = 'input', label = _L('recipe_image'), description = 'Image URL or filename'},
+        {type = 'input', label = _L('recipe_image'), description = 'Image URL (imgbb, imgur, etc.) or filename', placeholder = 'https://i.ibb.co/xxx/image.png'},
         {type = 'select', label = 'Station', required = true, options = {
             {value = 'prepare', label = 'Preparation'},
             {value = 'cook', label = 'Cooking'},
@@ -217,7 +217,7 @@ RegisterNetEvent('zrestaurants:client:editMenuItem', function(restaurant, item)
                 icon = 'image',
                 onSelect = function()
                     local input = lib.inputDialog('Change Image', {
-                        {type = 'input', label = 'Image URL', default = item.image}
+                        {type = 'input', label = 'Image URL', description = 'imgbb, imgur, etc.', placeholder = 'https://i.ibb.co/xxx/image.png', default = item.image}
                     })
 
                     if input then
