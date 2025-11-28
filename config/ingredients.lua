@@ -1,13 +1,12 @@
 Ingredients = {}
 
--- Base Ingredients
--- These are the items that can be used in recipes
--- Make sure these items exist in your ox_inventory/data/items.lua
+-- Base Ingredients (100 ingrédients en français)
+-- Ces items doivent exister dans votre ox_inventory/data/items.lua
 
 Ingredients = {
-    -- Meats
+    -- Viandes (Meats)
     ['raw_meat'] = {
-        label = 'Raw Meat',
+        label = 'Viande Crue',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -15,7 +14,7 @@ Ingredients = {
         category = 'meat'
     },
     ['cooked_meat'] = {
-        label = 'Cooked Meat',
+        label = 'Viande Cuite',
         hunger = 30,
         thirst = 0,
         calories = 300,
@@ -23,7 +22,7 @@ Ingredients = {
         category = 'meat'
     },
     ['raw_chicken'] = {
-        label = 'Raw Chicken',
+        label = 'Poulet Cru',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -31,7 +30,7 @@ Ingredients = {
         category = 'meat'
     },
     ['cooked_chicken'] = {
-        label = 'Cooked Chicken',
+        label = 'Poulet Cuit',
         hunger = 25,
         thirst = 0,
         calories = 250,
@@ -46,10 +45,50 @@ Ingredients = {
         buffs = {},
         category = 'meat'
     },
+    ['raw_fish'] = {
+        label = 'Poisson Cru',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'meat'
+    },
+    ['cooked_fish'] = {
+        label = 'Poisson Cuit',
+        hunger = 20,
+        thirst = 0,
+        calories = 200,
+        buffs = {},
+        category = 'meat'
+    },
+    ['raw_pork'] = {
+        label = 'Porc Cru',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'meat'
+    },
+    ['cooked_pork'] = {
+        label = 'Porc Cuit',
+        hunger = 28,
+        thirst = 0,
+        calories = 280,
+        buffs = {},
+        category = 'meat'
+    },
+    ['ground_beef'] = {
+        label = 'Bœuf Haché',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'meat'
+    },
 
-    -- Vegetables
+    -- Légumes (Vegetables)
     ['lettuce'] = {
-        label = 'Lettuce',
+        label = 'Laitue',
         hunger = 5,
         thirst = 5,
         calories = 50,
@@ -57,7 +96,7 @@ Ingredients = {
         category = 'vegetable'
     },
     ['tomato'] = {
-        label = 'Tomato',
+        label = 'Tomate',
         hunger = 5,
         thirst = 10,
         calories = 50,
@@ -65,7 +104,7 @@ Ingredients = {
         category = 'vegetable'
     },
     ['onion'] = {
-        label = 'Onion',
+        label = 'Oignon',
         hunger = 5,
         thirst = 0,
         calories = 50,
@@ -73,25 +112,131 @@ Ingredients = {
         category = 'vegetable'
     },
     ['pickles'] = {
-        label = 'Pickles',
+        label = 'Cornichons',
         hunger = 5,
         thirst = 5,
         calories = 50,
         buffs = {},
         category = 'vegetable'
     },
+    ['potato'] = {
+        label = 'Pomme de Terre',
+        hunger = 8,
+        thirst = 0,
+        calories = 80,
+        buffs = {},
+        category = 'vegetable'
+    },
+    ['carrot'] = {
+        label = 'Carotte',
+        hunger = 6,
+        thirst = 5,
+        calories = 60,
+        buffs = {},
+        category = 'vegetable'
+    },
+    ['cucumber'] = {
+        label = 'Concombre',
+        hunger = 4,
+        thirst = 8,
+        calories = 40,
+        buffs = {},
+        category = 'vegetable'
+    },
+    ['pepper'] = {
+        label = 'Poivron',
+        hunger = 5,
+        thirst = 5,
+        calories = 50,
+        buffs = {},
+        category = 'vegetable'
+    },
+    ['mushroom'] = {
+        label = 'Champignon',
+        hunger = 4,
+        thirst = 0,
+        calories = 40,
+        buffs = {},
+        category = 'vegetable'
+    },
+    ['spinach'] = {
+        label = 'Épinards',
+        hunger = 3,
+        thirst = 5,
+        calories = 30,
+        buffs = {},
+        category = 'vegetable'
+    },
+    ['corn'] = {
+        label = 'Maïs',
+        hunger = 7,
+        thirst = 0,
+        calories = 70,
+        buffs = {},
+        category = 'vegetable'
+    },
+    ['broccoli'] = {
+        label = 'Brocoli',
+        hunger = 5,
+        thirst = 3,
+        calories = 50,
+        buffs = {},
+        category = 'vegetable'
+    },
+
+    -- Produits Laitiers (Dairy)
     ['cheese'] = {
-        label = 'Cheese',
+        label = 'Fromage',
         hunger = 10,
         thirst = 0,
         calories = 100,
         buffs = {},
         category = 'dairy'
     },
+    ['milk'] = {
+        label = 'Lait',
+        hunger = 5,
+        thirst = 20,
+        calories = 50,
+        buffs = {},
+        category = 'dairy'
+    },
+    ['butter'] = {
+        label = 'Beurre',
+        hunger = 8,
+        thirst = 0,
+        calories = 80,
+        buffs = {},
+        category = 'dairy'
+    },
+    ['cream'] = {
+        label = 'Crème',
+        hunger = 6,
+        thirst = 0,
+        calories = 60,
+        buffs = {},
+        category = 'dairy'
+    },
+    ['whipped_cream'] = {
+        label = 'Crème Fouettée',
+        hunger = 5,
+        thirst = 0,
+        calories = 50,
+        buffs = {},
+        category = 'dairy'
+    },
+    ['yogurt'] = {
+        label = 'Yaourt',
+        hunger = 8,
+        thirst = 10,
+        calories = 80,
+        buffs = {},
+        category = 'dairy'
+    },
 
-    -- Bread & Dough
+    -- Pain & Pâte (Bread & Dough)
     ['bread'] = {
-        label = 'Bread',
+        label = 'Pain',
         hunger = 15,
         thirst = 0,
         calories = 150,
@@ -99,7 +244,7 @@ Ingredients = {
         category = 'bread'
     },
     ['burger_bun'] = {
-        label = 'Burger Bun',
+        label = 'Pain à Burger',
         hunger = 10,
         thirst = 0,
         calories = 100,
@@ -107,12 +252,44 @@ Ingredients = {
         category = 'bread'
     },
     ['pizza_dough'] = {
-        label = 'Pizza Dough',
+        label = 'Pâte à Pizza',
         hunger = 5,
         thirst = 0,
         calories = 50,
         buffs = {},
         category = 'dough'
+    },
+    ['hot_dog_bun'] = {
+        label = 'Pain à Hot Dog',
+        hunger = 10,
+        thirst = 0,
+        calories = 100,
+        buffs = {},
+        category = 'bread'
+    },
+    ['croissant'] = {
+        label = 'Croissant',
+        hunger = 12,
+        thirst = 0,
+        calories = 120,
+        buffs = {},
+        category = 'bread'
+    },
+    ['baguette'] = {
+        label = 'Baguette',
+        hunger = 18,
+        thirst = 0,
+        calories = 180,
+        buffs = {},
+        category = 'bread'
+    },
+    ['tortilla'] = {
+        label = 'Tortilla',
+        hunger = 8,
+        thirst = 0,
+        calories = 80,
+        buffs = {},
+        category = 'bread'
     },
 
     -- Sauces & Condiments
@@ -125,7 +302,7 @@ Ingredients = {
         category = 'sauce'
     },
     ['mustard'] = {
-        label = 'Mustard',
+        label = 'Moutarde',
         hunger = 2,
         thirst = 0,
         calories = 20,
@@ -141,17 +318,49 @@ Ingredients = {
         category = 'sauce'
     },
     ['tomato_sauce'] = {
-        label = 'Tomato Sauce',
+        label = 'Sauce Tomate',
         hunger = 5,
         thirst = 0,
         calories = 50,
         buffs = {},
         category = 'sauce'
     },
+    ['bbq_sauce'] = {
+        label = 'Sauce BBQ',
+        hunger = 5,
+        thirst = 0,
+        calories = 50,
+        buffs = {},
+        category = 'sauce'
+    },
+    ['ranch_sauce'] = {
+        label = 'Sauce Ranch',
+        hunger = 5,
+        thirst = 0,
+        calories = 50,
+        buffs = {},
+        category = 'sauce'
+    },
+    ['hot_sauce'] = {
+        label = 'Sauce Piquante',
+        hunger = 1,
+        thirst = -3,
+        calories = 10,
+        buffs = {},
+        category = 'sauce'
+    },
+    ['soy_sauce'] = {
+        label = 'Sauce Soja',
+        hunger = 2,
+        thirst = -2,
+        calories = 20,
+        buffs = {},
+        category = 'sauce'
+    },
 
-    -- Frozen Foods
+    -- Surgelés (Frozen Foods)
     ['frozen_fries'] = {
-        label = 'Frozen Fries',
+        label = 'Frites Surgelées',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -159,7 +368,31 @@ Ingredients = {
         category = 'frozen'
     },
     ['frozen_nuggets'] = {
-        label = 'Frozen Nuggets',
+        label = 'Nuggets Surgelés',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'frozen'
+    },
+    ['chicken_wings_raw'] = {
+        label = 'Ailes de Poulet Crues',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'frozen'
+    },
+    ['onion_rings_frozen'] = {
+        label = 'Rondelles d\'Oignon Surgelées',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'frozen'
+    },
+    ['frozen_pizza'] = {
+        label = 'Pizza Surgelée',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -167,9 +400,9 @@ Ingredients = {
         category = 'frozen'
     },
 
-    -- Cooked Items (for recipes)
+    -- Aliments Cuisinés (Cooked Items)
     ['fries'] = {
-        label = 'Fries',
+        label = 'Frites',
         hunger = 20,
         thirst = 0,
         calories = 200,
@@ -177,7 +410,7 @@ Ingredients = {
         category = 'sides'
     },
     ['nuggets'] = {
-        label = 'Chicken Nuggets',
+        label = 'Nuggets de Poulet',
         hunger = 25,
         thirst = 0,
         calories = 250,
@@ -185,9 +418,9 @@ Ingredients = {
         category = 'sides'
     },
 
-    -- Drinks Base
+    -- Boissons (Drinks Base)
     ['water_bottle'] = {
-        label = 'Water Bottle',
+        label = 'Bouteille d\'Eau',
         hunger = 0,
         thirst = 50,
         calories = 0,
@@ -195,23 +428,15 @@ Ingredients = {
         category = 'drink'
     },
     ['coffee_beans'] = {
-        label = 'Coffee Beans',
+        label = 'Grains de Café',
         hunger = 0,
         thirst = 0,
         calories = 0,
         buffs = {},
         category = 'drink_base'
     },
-    ['milk'] = {
-        label = 'Milk',
-        hunger = 5,
-        thirst = 20,
-        calories = 50,
-        buffs = {},
-        category = 'dairy'
-    },
     ['ice'] = {
-        label = 'Ice',
+        label = 'Glace',
         hunger = 0,
         thirst = 5,
         calories = 0,
@@ -219,17 +444,33 @@ Ingredients = {
         category = 'drink_base'
     },
     ['soda_syrup'] = {
-        label = 'Soda Syrup',
+        label = 'Sirop de Soda',
         hunger = 0,
         thirst = 0,
         calories = 0,
         buffs = {},
         category = 'drink_base'
     },
+    ['tea_leaves'] = {
+        label = 'Feuilles de Thé',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'drink_base'
+    },
+    ['juice'] = {
+        label = 'Jus de Fruits',
+        hunger = 5,
+        thirst = 30,
+        calories = 50,
+        buffs = {},
+        category = 'drink'
+    },
 
-    -- Special Ingredients
+    -- Ingrédients Spéciaux (Special Ingredients)
     ['sugar'] = {
-        label = 'Sugar',
+        label = 'Sucre',
         hunger = 5,
         thirst = 0,
         calories = 50,
@@ -237,7 +478,7 @@ Ingredients = {
         category = 'special'
     },
     ['salt'] = {
-        label = 'Salt',
+        label = 'Sel',
         hunger = 0,
         thirst = -5,
         calories = 0,
@@ -245,7 +486,7 @@ Ingredients = {
         category = 'special'
     },
     ['pepper'] = {
-        label = 'Pepper',
+        label = 'Poivre',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -253,7 +494,39 @@ Ingredients = {
         category = 'special'
     },
     ['oil'] = {
-        label = 'Cooking Oil',
+        label = 'Huile de Cuisson',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'special'
+    },
+    ['flour'] = {
+        label = 'Farine',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'special'
+    },
+    ['yeast'] = {
+        label = 'Levure',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'special'
+    },
+    ['vanilla'] = {
+        label = 'Vanille',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'special'
+    },
+    ['cinnamon'] = {
+        label = 'Cannelle',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -261,9 +534,9 @@ Ingredients = {
         category = 'special'
     },
 
-    -- Alcohol Ingredients
+    -- Alcool (Alcohol Ingredients)
     ['vodka_bottle'] = {
-        label = 'Vodka Bottle',
+        label = 'Bouteille de Vodka',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -271,7 +544,7 @@ Ingredients = {
         category = 'alcohol'
     },
     ['whiskey_bottle'] = {
-        label = 'Whiskey Bottle',
+        label = 'Bouteille de Whisky',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -279,7 +552,7 @@ Ingredients = {
         category = 'alcohol'
     },
     ['beer_bottle'] = {
-        label = 'Beer Bottle',
+        label = 'Bouteille de Bière',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -287,7 +560,7 @@ Ingredients = {
         category = 'alcohol'
     },
     ['tequila_bottle'] = {
-        label = 'Tequila Bottle',
+        label = 'Bouteille de Tequila',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -295,49 +568,157 @@ Ingredients = {
         category = 'alcohol'
     },
     ['rum_bottle'] = {
-        label = 'Rum Bottle',
+        label = 'Bouteille de Rhum',
         hunger = 0,
         thirst = 0,
         calories = 0,
         buffs = {},
         category = 'alcohol'
     },
+    ['wine_bottle'] = {
+        label = 'Bouteille de Vin',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'alcohol'
+    },
+    ['champagne_bottle'] = {
+        label = 'Bouteille de Champagne',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'alcohol'
+    },
+    ['gin_bottle'] = {
+        label = 'Bouteille de Gin',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'alcohol'
+    },
+
+    -- Fruits
     ['lime'] = {
-        label = 'Lime',
+        label = 'Citron Vert',
         hunger = 2,
         thirst = 5,
         calories = 20,
         buffs = {},
         category = 'fruit'
     },
+    ['lemon'] = {
+        label = 'Citron',
+        hunger = 2,
+        thirst = 5,
+        calories = 20,
+        buffs = {},
+        category = 'fruit'
+    },
+    ['apple'] = {
+        label = 'Pomme',
+        hunger = 10,
+        thirst = 5,
+        calories = 100,
+        buffs = {},
+        category = 'fruit'
+    },
+    ['banana'] = {
+        label = 'Banane',
+        hunger = 12,
+        thirst = 3,
+        calories = 120,
+        buffs = {},
+        category = 'fruit'
+    },
+    ['strawberry'] = {
+        label = 'Fraise',
+        hunger = 5,
+        thirst = 4,
+        calories = 50,
+        buffs = {},
+        category = 'fruit'
+    },
+    ['orange'] = {
+        label = 'Orange',
+        hunger = 8,
+        thirst = 10,
+        calories = 80,
+        buffs = {},
+        category = 'fruit'
+    },
+    ['grape'] = {
+        label = 'Raisin',
+        hunger = 6,
+        thirst = 8,
+        calories = 60,
+        buffs = {},
+        category = 'fruit'
+    },
+    ['watermelon'] = {
+        label = 'Pastèque',
+        hunger = 10,
+        thirst = 20,
+        calories = 100,
+        buffs = {},
+        category = 'fruit'
+    },
+
+    -- Herbes & Épices (Herbs & Spices)
     ['mint'] = {
-        label = 'Mint',
+        label = 'Menthe',
         hunger = 0,
         thirst = 0,
         calories = 0,
         buffs = {},
         category = 'herb'
     },
+    ['basil'] = {
+        label = 'Basilic',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'herb'
+    },
+    ['oregano'] = {
+        label = 'Origan',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'herb'
+    },
+    ['parsley'] = {
+        label = 'Persil',
+        hunger = 0,
+        thirst = 0,
+        calories = 0,
+        buffs = {},
+        category = 'herb'
+    },
+    ['garlic'] = {
+        label = 'Ail',
+        hunger = 1,
+        thirst = 0,
+        calories = 10,
+        buffs = {},
+        category = 'herb'
+    },
 
-    -- Coffee Ingredients
+    -- Café (Coffee Ingredients)
     ['espresso_shot'] = {
-        label = 'Espresso Shot',
+        label = 'Shot d\'Espresso',
         hunger = 0,
         thirst = 10,
         calories = 5,
         buffs = {},
         category = 'coffee'
     },
-    ['whipped_cream'] = {
-        label = 'Whipped Cream',
-        hunger = 5,
-        thirst = 0,
-        calories = 50,
-        buffs = {},
-        category = 'dairy'
-    },
     ['chocolate_syrup'] = {
-        label = 'Chocolate Syrup',
+        label = 'Sirop de Chocolat',
         hunger = 10,
         thirst = 0,
         calories = 100,
@@ -345,7 +726,15 @@ Ingredients = {
         category = 'special'
     },
     ['caramel_syrup'] = {
-        label = 'Caramel Syrup',
+        label = 'Sirop de Caramel',
+        hunger = 10,
+        thirst = 0,
+        calories = 100,
+        buffs = {},
+        category = 'special'
+    },
+    ['hazelnut_syrup'] = {
+        label = 'Sirop de Noisette',
         hunger = 10,
         thirst = 0,
         calories = 100,
@@ -355,7 +744,7 @@ Ingredients = {
 
     -- Diner Ingredients
     ['eggs'] = {
-        label = 'Eggs',
+        label = 'Œufs',
         hunger = 15,
         thirst = 0,
         calories = 150,
@@ -363,7 +752,7 @@ Ingredients = {
         category = 'protein'
     },
     ['pancake_mix'] = {
-        label = 'Pancake Mix',
+        label = 'Préparation à Crêpes',
         hunger = 0,
         thirst = 0,
         calories = 0,
@@ -371,88 +760,94 @@ Ingredients = {
         category = 'baking'
     },
     ['maple_syrup'] = {
-        label = 'Maple Syrup',
+        label = 'Sirop d\'Érable',
         hunger = 10,
         thirst = 0,
         calories = 100,
         buffs = {},
         category = 'special'
     },
-    ['hot_dog_bun'] = {
-        label = 'Hot Dog Bun',
-        hunger = 10,
-        thirst = 0,
-        calories = 100,
-        buffs = {},
-        category = 'bread'
-    },
     ['sausage'] = {
-        label = 'Sausage',
+        label = 'Saucisse',
         hunger = 20,
         thirst = 0,
         calories = 200,
         buffs = {},
         category = 'meat'
     },
-    ['apple'] = {
-        label = 'Apple',
-        hunger = 10,
-        thirst = 5,
-        calories = 100,
-        buffs = {},
-        category = 'fruit'
-    },
     ['pie_crust'] = {
-        label = 'Pie Crust',
+        label = 'Pâte à Tarte',
         hunger = 5,
         thirst = 0,
         calories = 50,
         buffs = {},
         category = 'baking'
     },
-
-    -- Fast Food Ingredients
-    ['chicken_wings_raw'] = {
-        label = 'Raw Chicken Wings',
-        hunger = 0,
+    ['honey'] = {
+        label = 'Miel',
+        hunger = 8,
         thirst = 0,
-        calories = 0,
+        calories = 80,
         buffs = {},
-        category = 'meat'
+        category = 'special'
     },
-    ['onion_rings_frozen'] = {
-        label = 'Frozen Onion Rings',
-        hunger = 0,
+    ['peanut_butter'] = {
+        label = 'Beurre de Cacahuète',
+        hunger = 15,
         thirst = 0,
-        calories = 0,
+        calories = 150,
         buffs = {},
-        category = 'frozen'
+        category = 'special'
     },
-    ['bbq_sauce'] = {
-        label = 'BBQ Sauce',
-        hunger = 5,
+    ['jam'] = {
+        label = 'Confiture',
+        hunger = 8,
         thirst = 0,
-        calories = 50,
+        calories = 80,
         buffs = {},
-        category = 'sauce'
+        category = 'special'
     },
-    ['ranch_sauce'] = {
-        label = 'Ranch Sauce',
-        hunger = 5,
+    ['chocolate'] = {
+        label = 'Chocolat',
+        hunger = 10,
         thirst = 0,
-        calories = 50,
+        calories = 100,
         buffs = {},
-        category = 'sauce'
+        category = 'special'
+    },
+    ['rice'] = {
+        label = 'Riz',
+        hunger = 12,
+        thirst = 0,
+        calories = 120,
+        buffs = {},
+        category = 'grain'
+    },
+    ['pasta'] = {
+        label = 'Pâtes',
+        hunger = 15,
+        thirst = 0,
+        calories = 150,
+        buffs = {},
+        category = 'grain'
+    },
+    ['beans'] = {
+        label = 'Haricots',
+        hunger = 10,
+        thirst = 0,
+        calories = 100,
+        buffs = {},
+        category = 'vegetable'
     }
 }
 
--- Prepared Recipes (Example recipes that come with the script)
--- Restaurant owners can create their own recipes via the management menu
+-- Recettes Préparées (Example recipes that come with the script)
+-- Les propriétaires peuvent créer leurs propres recettes via le menu de gestion
 PreparedRecipes = {
-    -- Burger Shot Recipes
+    -- Burger Shot
     burgershot = {
         ['bs_burger'] = {
-            label = 'Burger Shot Burger',
+            label = 'Burger Burger Shot',
             image = 'bs_burger.png',
             price = 15,
             ingredients = {
@@ -463,14 +858,14 @@ PreparedRecipes = {
                 {item = 'tomato', amount = 1}
             },
             station = 'prepare',
-            time = 5000, -- milliseconds
+            time = 5000,
             hunger = 60,
             thirst = 0,
             calories = 600,
             buffs = {}
         },
         ['bs_fries'] = {
-            label = 'Burger Shot Fries',
+            label = 'Frites Burger Shot',
             image = 'bs_fries.png',
             price = 5,
             ingredients = {
@@ -486,7 +881,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['bs_soda'] = {
-            label = 'Burger Shot Soda',
+            label = 'Soda Burger Shot',
             image = 'bs_soda.png',
             price = 3,
             ingredients = {
@@ -503,10 +898,10 @@ PreparedRecipes = {
         }
     },
 
-    -- Pizza This Recipes
+    -- Pizza This
     pizzathis = {
         ['pizza_margherita'] = {
-            label = 'Margherita Pizza',
+            label = 'Pizza Margherita',
             image = 'pizza_margherita.png',
             price = 20,
             ingredients = {
@@ -523,7 +918,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['pizza_pepperoni'] = {
-            label = 'Pepperoni Pizza',
+            label = 'Pizza Pepperoni',
             image = 'pizza_pepperoni.png',
             price = 25,
             ingredients = {
@@ -544,7 +939,7 @@ PreparedRecipes = {
     -- Vanilla Unicorn (Bar)
     unicorn = {
         ['unicorn_vodka'] = {
-            label = 'Vodka Glass',
+            label = 'Verre de Vodka',
             image = 'vodka.png',
             price = 12,
             ingredients = {
@@ -559,7 +954,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['unicorn_whiskey'] = {
-            label = 'Whiskey Glass',
+            label = 'Verre de Whisky',
             image = 'whiskey.png',
             price = 15,
             ingredients = {
@@ -574,7 +969,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['unicorn_beer'] = {
-            label = 'Cold Beer',
+            label = 'Bière Fraîche',
             image = 'beer.png',
             price = 8,
             ingredients = {
@@ -588,7 +983,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['unicorn_cocktail'] = {
-            label = 'Unicorn Cocktail',
+            label = 'Cocktail Unicorn',
             image = 'cocktail.png',
             price = 18,
             ingredients = {
@@ -605,7 +1000,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['unicorn_tequila'] = {
-            label = 'Tequila Shot',
+            label = 'Shot de Tequila',
             image = 'tequila.png',
             price = 10,
             ingredients = {
@@ -625,7 +1020,7 @@ PreparedRecipes = {
     -- Up'N Atom
     upnatom = {
         ['atom_burger'] = {
-            label = 'Atom Burger',
+            label = 'Burger Atom',
             image = 'atom_burger.png',
             price = 18,
             ingredients = {
@@ -644,7 +1039,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['atom_fries'] = {
-            label = 'Atom Fries',
+            label = 'Frites Atom',
             image = 'atom_fries.png',
             price = 6,
             ingredients = {
@@ -660,7 +1055,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['atom_wings'] = {
-            label = 'Chicken Wings',
+            label = 'Ailes de Poulet',
             image = 'wings.png',
             price = 14,
             ingredients = {
@@ -676,7 +1071,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['atom_onion_rings'] = {
-            label = 'Onion Rings',
+            label = 'Rondelles d\'Oignon',
             image = 'onion_rings.png',
             price = 7,
             ingredients = {
@@ -713,7 +1108,7 @@ PreparedRecipes = {
     -- Pop's Diner
     popsdiner = {
         ['diner_breakfast'] = {
-            label = 'Classic Breakfast',
+            label = 'Petit-Déjeuner Classique',
             image = 'breakfast.png',
             price = 22,
             ingredients = {
@@ -731,7 +1126,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['diner_pancakes'] = {
-            label = 'Pancakes Stack',
+            label = 'Pile de Crêpes',
             image = 'pancakes.png',
             price = 16,
             ingredients = {
@@ -767,7 +1162,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['diner_apple_pie'] = {
-            label = 'Apple Pie Slice',
+            label = 'Part de Tarte aux Pommes',
             image = 'apple_pie.png',
             price = 12,
             ingredients = {
@@ -834,7 +1229,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['bean_latte'] = {
-            label = 'Caffe Latte',
+            label = 'Café Latte',
             image = 'latte.png',
             price = 9,
             ingredients = {
@@ -850,7 +1245,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['bean_mocha'] = {
-            label = 'Mocha',
+            label = 'Moka',
             image = 'mocha.png',
             price = 10,
             ingredients = {
@@ -867,7 +1262,7 @@ PreparedRecipes = {
             buffs = {}
         },
         ['bean_iced_coffee'] = {
-            label = 'Iced Coffee',
+            label = 'Café Glacé',
             image = 'iced_coffee.png',
             price = 7,
             ingredients = {
